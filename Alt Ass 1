@@ -1,9 +1,8 @@
 //Alternative Assingment 1 
 
 //Program to calculate the avg test score.
-//Given a student's name and five test scores, this program calculates the average
-//The student's name, the scores, and the avg are stored in the file testavg.out. 
-//The data is input manually.
+//Given a student's name and five test scores, this program calculates the average score.
+//The student's name is entered while the scores are declared. 
 
 
 #include <iostream>
@@ -15,28 +14,29 @@ using namespace std;
 
 int main()
 { 
-            //Declaring variables   
-    istream cin; //keyboard input stream variable
-    ostream cout;  //output stream variable
-
-    double test1 = 87.50, test2 = 89, test3 = 65.75, test4 = 37, test5 = 98.50;
+                                                                                    //Step 1; Declaring variables   
+    double test1 = 87.50;                                                           //At first, I had all scores on one line but would return test1 as 0.00
+    double test2 = 89.0;
+    double test3 = 65.75; 
+    double test4 = 37.0;
+    double test5 = 98.50;
     double average; 
 
-    string firstName;
+    string firstName;                                                               //Step 2; f and l name are written together   
     string lastName;
 
-    cout << fixed << showpoint;
+    cout << fixed << showpoint;                                                     //Step 3; outputs floating-point numbers in a fixed decimal format
     cout << setprecision(2);
 
     cout << "Enter first and last name" << endl;
 
-    cin >> firstName >> lastName;           
+    cin >> firstName >> lastName;                                                   //Step 4       
     cout << "Student's Name: " << firstName << " " << lastName << endl;
-    cin >> test1 >> test2 >> test3 >> test4 >> test5;
-    cout << "Test scores: " << setw(6) << test1 setw(6) << test2 setw(6) << test3 setw(6) << test4 setw(6) << test5 setw(6) << endl;
+    cout << "Test scores: " << setw(6) << test1 << setw(6) << test2 << setw(6) <<   
+            test3 << setw(6) << test4 << setw(6) << test5 << setw(6) << endl;       //Step5   
 
-    average = (test1 + test2 + test3 + test4 + test5) / 5.0; 
-    cout << "Average Test Score: " << setw(6) << average << endl;
+    average = (test1 + test2 + test3 + test4 + test5) / 5.0;                        //Step 6
+    cout << "Average Test Score: " << setw(6) << average << endl;                   //Step 7
 
     return 0;
 
