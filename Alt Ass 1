@@ -1,0 +1,43 @@
+//Alternative Assingment 1 
+
+//Program to calculate the avg test score.
+//Given a student's name and five test scores, this program calculates the average
+//The student's name, the scores, and the avg are stored in the file testavg.out. 
+//The data is input manually.
+
+
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+{ 
+            //Declaring variables   
+    istream cin; //keyboard input stream variable
+    ostream cout;  //output stream variable
+
+    double test1 = 87.50, test2 = 89, test3 = 65.75, test4 = 37, test5 = 98.50;
+    double average; 
+
+    string firstName;
+    string lastName;
+
+    cout << fixed << showpoint;
+    cout << setprecision(2);
+
+    cout << "Enter first and last name" << endl;
+
+    cin >> firstName >> lastName;           
+    cout << "Student's Name: " << firstName << " " << lastName << endl;
+    cin >> test1 >> test2 >> test3 >> test4 >> test5;
+    cout << "Test scores: " << setw(6) << test1 setw(6) << test2 setw(6) << test3 setw(6) << test4 setw(6) << test5 setw(6) << endl;
+
+    average = (test1 + test2 + test3 + test4 + test5) / 5.0; 
+    cout << "Average Test Score: " << setw(6) << average << endl;
+
+    return 0;
+
+ }
