@@ -3,6 +3,7 @@
 //Program to calculate the avg test score.
 //Given a student's name and five test scores, this program calculates the average score.
 //The student's name is entered while the scores are declared. 
+//I wrote most of this with VSC and used Onlinegdb to degug. I am writing this last note on github.
 
 
 #include <iostream>
