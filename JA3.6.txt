@@ -1,0 +1,27 @@
+//Chapter 3 Programming Exercise 6
+// Inputing the values of mass and density to find volume of an object 
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    double mass;
+    double density;
+    double volume;
+
+
+    cout << "Enter mass and density: " << endl;
+    cin >> mass >> density;
+    cout << "mass " << mass << "g" << endl;
+    cout << "density " << density << "g/cm^3" << endl;
+
+    cout << fixed << setprecision(2); 
+    volume = (mass / density);                             
+    cout << "volume = mass (g) / density (g/cm^2): " <<  volume << " " << endl;
+
+    return 0;
+}
