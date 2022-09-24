@@ -1,0 +1,24 @@
+//Chapter 3 Programming Exercise 3 
+//Converting kilograms to pounds
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    double kilograms;
+    double conversion;
+    
+    cout << "Enter weight in kg " << endl;
+    cin >> kilograms;
+    
+    cout << "Weight in Kilograms: " << kilograms << "kg " << endl; 
+
+    cout << fixed << setprecision(2);                               // It took me forever to figure out why it was not returning 
+    cout << "Conversion: " <<  kilograms * 2.20 << " lb " << endl;  // a two decimal output. It needed to go after the setprecision.
+ 
+ return 0;
+ }
